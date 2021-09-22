@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8b60d7b84f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Covid-19 Tracker</title>
+  </head>
+  <body>
+    <h1 class="heading">COVID-19 TRACKER</h1>
+
+    <!-- ALL CASE SECTION -->
+    <section class="allcases">
+      <div class="card">
+        <header>
+          <h3>TOTAL CASES</h3>
+          <i class="fas fa-users"></i>
+        </header>
+        <h4 class="value" id="cases"></h4>
+      </div>
+
+      <div class="card">
+        <header>
+          <h3>TOTAL DEATHS</h3>
+          <i class="fas fa-skull-crossbones"></i>
+        </header>
+        <h4 class="value" id="deaths"></h4>
+      </div>
+
+      <div class="card">
+        <header>
+          <h3>TOTAL RECOVERED</h3>
+          <i class="fas fa-laugh-beam"></i>
+        </header>
+        <h4 class="value" id="recovered"></h4>
+      </div>
+
+      <div class="card">
+        <header>
+          <h3>NEW CASES</h3>
+          <i class="fas fa-bell"></i>
+        </header>
+        <h4 class="value" id="new__cases"></h4>
+      </div>
+    </section>
+
+    <section class="country__search">
+      <h1 class="heading">Search for a specific Country</h1>
+      <input type="text" id="country__input" class="country__input" placeholder="Enter a country or code">
+      <button class="search" id="search">
+        GET INFO
+      </button>
+    </section>
+
+    <div class="country__card" id="country__card">
+      <header class="country__card__header">
+        <h3 id="country__name">INDIA</h3>
+        <img src="#" alt="Country Flag" id="country__flag">
+      </header>
+      
+      <p>
+        Total Cases : <span id="span1">0</span>
+      </p>
+
+      <p>
+        Total Deaths : <span id="span2">0</span>
+      </p>
+
+      <p>
+        Total Recovered : <span id="span3">0</span>
+      </p>
+
+      <p>
+        New Cases : <span id="span4">0</span>
+      </p>
+    </div>
+
+    <script src="./app.js" await></script>
+  </body>
+</html>

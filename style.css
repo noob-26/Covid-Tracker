@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* HEADING */
+.heading{
+    text-align: center;
+    margin: 15px;
+}
+
+
+i{
+    font-size: 25px;
+}
+
+/* ICONS */
+.fa-users{
+    color: blue;
+}
+
+.fa-skull-crossbones{
+    color: red;
+}
+
+.fa-laugh-beam{
+    color: green;
+}
+
+.fa-bell{
+    color: orange;
+}
+
+/* THE TOTAL CASES SECTION */
+
+.allcases{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(226, 226, 226);
+    padding: 25px;
+}
+
+.card{
+    height: 100px;
+    margin: 10px;
+    padding: 15px;
+    background-color:#ffffff;
+    border: 1px solid black;
+    width: 23%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .card{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .card{
+        width: 90%;
+    }
+}
+
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.1s;
+    transform: translateY(-10px);
+    transform: translateZ(-50px);
+}
+
+.card header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .value{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.country__search{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.country__search .country__input{
+    width: 50%;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.search{
+    height: 30px;
+    padding: 0 10px;
+    color: #ffffff;
+    background-color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    margin-bottom: 40px;
+}
+
+.country__card{
+    height: 250px;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 768px)
+{
+    .country__card{
+        width: 70%;
+        height: 330px;
+    }
+}
+
+.country__card > header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.country__card p{
+    margin: 10px;
+}
+
+#country__card{
+    visibility: hidden;
+}
+
+#country__flag{
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+}
