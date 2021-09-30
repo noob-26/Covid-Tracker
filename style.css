@@ -145,3 +145,48 @@ i{
     width: 50px;
     border: 1px solid black;
 }
+
+.heading{
+    text-align: center;
+}
+
+.vaccine-btn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.info{
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+}
+
+.details{
+    width: 70vw;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.centers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(226, 226, 226);
+    padding: 5px;
+    align-items: stretch;
+}
+
+#submit-btn{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.empty{
+    width: 100vw;
+    height: 50px;
+}

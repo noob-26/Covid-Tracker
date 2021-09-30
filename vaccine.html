@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert alert-primary info" role="alert">
+        Not registered on <a href="https://www.cowin.gov.in/"> COWIN</a> portal yet? Go To the <a href="https://www.cowin.gov.in/"> COWIN</a> portal now and register yourself and your family to get vaccinated.
+      </div>
+
+      <h4 class="heading">VAX-INFO</h4>
+
+      <div class="details">
+          <h3>ENTER DETAILS</h3>
+
+          <form>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example" id="state-select">
+                    <option selected>Select State</option>
+                  </select>
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example" id="district-select">
+                    <option selected>Select District</option>
+                  </select>
+            </div>
+            Select Date for Vaccination
+            <div class="mb-3">
+               <input type="date" name="date" id="date">
+            </div>
+
+            <div class="alert alert-primary info" role="alert">
+                Only showing vaccination centers where doses are available filtering out the unavailable centers from the COWIN website.
+              </div>
+
+            <button type="submit" class="btn btn-primary" id="submit-btn">GET VACCINATION CENTRES</button>
+          </form>
+      </div>
+
+      <div class="alert alert-primary info" id="not-available-alert" role="alert">
+        Could not find any vaccination centres. Maybe try a different location or date?
+      </div>
+
+      <div id="centres" class="centers">
+
+      </div>
+
+      <a href="./index.html">
+        <button class="search vaccine-btn">
+          BACK TO CASES PAGE
+        </button>
+      </a>
+
+    <div class="empty">
+      
+    </div>
+
+      <script src="./script.js"></script>
+</body>
+</html>
