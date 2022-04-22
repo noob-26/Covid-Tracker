@@ -12,4 +12,4 @@ TECHNOLOGIES
 3. JS
 4. APIs
 
-The website is currently hosted at : https://covid-tracker-fts.netlify.app/
+The website is currently hosted at : https://covid19-helper.netlify.app/
